@@ -64,9 +64,8 @@ class _HomeState extends State<Home> {
               // icone de carregamento (CircularProgressIndicator)
               retorno = Center(child: CircularProgressIndicator());
               break;
-            // requisição concluída
-
-
+            
+             // requisição concluída
             case ConnectionState.done:
               print("Conexão done");
               if (snapshot.hasError) {
